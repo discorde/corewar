@@ -1,0 +1,51 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fnct.h                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lcaminon <lcaminon@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/01/10 18:21:32 by lcaminon          #+#    #+#             */
+/*   Updated: 2014/01/11 19:39:32 by lcaminon         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef			FNCT_H
+# define		FNCT_H
+
+# define		F_A			1
+# define		F_B			2
+# define		F_C			4
+# define		F_D			8
+# define		F_E			16
+# define		F_F			32
+# define		F_G			64
+# define		F_H			128
+
+# define		CARRY		F_A
+# define		ALIVE		F_B
+
+typedef struct	s_proc
+{
+	char		reg[REG_NUMBER][REG_SIZE];
+	char		*pc;
+	int			flag;
+	int			cooldown;
+}				t_proc;
+
+typedef struct	s_champ
+{
+	char		*name;
+	int			live;
+}				t_champ;
+
+typedef struct	s_vm
+{
+	t_lst		*champ;
+	t_lst		*proc;
+	char		mem[MEM_SIZE];
+}				t_vm;
+
+void			lfork(char *s, unsigned int pos, t_lst *hproc, t_lst *targ);
+
+#endif			/* !FNCT_H */
