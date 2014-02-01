@@ -6,7 +6,7 @@
 #    By: lcaminon <lcaminon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/12/29 12:57:40 by lcaminon          #+#    #+#              #
-#    Updated: 2014/01/11 19:05:14 by lcaminon         ###   ########.fr        #
+#    Updated: 2014/02/01 19:25:50 by lcaminon         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -15,6 +15,7 @@ NAME =			libft.a
 SRCDIR =		src
 
 SRC =			ft_atoi.c \
+				ft_atoui.c \
 				ft_bzero.c \
 				ft_isalnum.c \
 				ft_isalpha.c \
