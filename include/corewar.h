@@ -6,7 +6,7 @@
 /*   By: lcaminon <lcaminon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/11 21:23:07 by lcaminon          #+#    #+#             */
-/*   Updated: 2014/01/30 18:11:55 by lcaminon         ###   ########.fr       */
+/*   Updated: 2014/02/01 14:16:58 by lcaminon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,5 @@ typedef struct	s_vm
 	t_list		*proc;
 	char		*mem;
 }				t_vm;
-
-void			lfork(char *s, unsigned int pos, t_list *hproc, t_list *targ);
 
 #endif			/* !COREWAR_H */
