@@ -6,7 +6,7 @@
 /*   By: lcaminon <lcaminon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/29 12:29:03 by lcaminon          #+#    #+#             */
-/*   Updated: 2014/01/11 19:08:42 by lcaminon         ###   ########.fr       */
+/*   Updated: 2014/02/02 17:30:46 by lcaminon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 void		ft_lstadd(t_list **alst, t_list *new)
 {
 	new->next = *alst;
-	(*alst)->prev = new;
+	if (*alst)
+		(*alst)->prev = new;
 	new->prev = NULL;
 	*alst = new;
 }
